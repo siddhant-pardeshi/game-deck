@@ -13,6 +13,22 @@ The deck is built on one shared **game kit**. Every game copies the same four mo
 | `js/core.js` | Fixed-timestep loop, DPR-aware canvas, unified keyboard/joystick/swipe input, storage, screens, toasts, particles (`Kit.*`) |
 | `js/shell.js` | Menu / how-to / settings / pause / results screens, touch UI, topbar, mascot dock, audio unlock |
 | `css/shell.css` | All chrome styling, themed per game via CSS custom properties |
+| `js/learn.js` | The teaching layer: concept cards, mastery tracking, Codex screen (`Learn.define / nextCard / show / summary`) |
+
+## The learning layer (learn for real, never quiz-slap)
+
+Every game carries a curriculum bank in `js/learn-data.js` mapped to a track of the studio catalog — and it must hook into the game's own mechanics, never appear as unrelated trivia pasted over the action:
+
+| Game | Track | Mechanic-true hook |
+| --- | --- | --- |
+| Voltwing GP | Git essentials | Pit boards between laps; a correct read patches the boost cell |
+| Saucer Siege | Debugging & security bug classes | Between-wave debriefs; saucers wear bug-class labels |
+| Aurora Pilot | Networking layers | Stage briefings as the sky crosses each layer of the stack |
+| Ripcurrent | Git survival moves | Buoy commands in the swell; board briefings between sets |
+| Metro Dash | Scam radar + HTTP status codes | Billboard teaches real-vs-phishing; end-of-run debrief |
+| Ember Isles | Working with AI assistants | Data-slate pickups open cards; NPCs reference slate topics |
+
+Rules: cards surface at natural micro-breaks, are always skippable, never block the action, reward correct answers in the game's own economy, explain every wrong answer in one line, and persist per-topic mastery (3 correct = mastered) shown in the menu's Concept Codex.
 
 ## The `window.GAME` contract
 
