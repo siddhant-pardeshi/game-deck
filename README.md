@@ -4,6 +4,8 @@ Six handcrafted browser games on one deck — and the playbook for how the catal
 
 **▶ Open the deck:** https://siddhant-pardeshi.github.io/game-deck/
 
+![The Game Deck](docs/media/deck.png)
+
 ## What's on the deck
 
 | Game | Genre | Play |
