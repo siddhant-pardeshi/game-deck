@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Game Deck — handcrafted browser games by Siddhant Pardeshi</title>
+<meta name="description" content="Six handcrafted browser games — a neon hovercar GP, a UFO siege, a dawn mail-run flight, a sunset surf, a rooftop rush and a warm little island RPG. Free, no install, phone and desktop.">
+<meta name="theme-color" content="#0B0F1C">
+<meta property="og:title" content="The Game Deck — handcrafted browser games">
+<meta property="og:description" content="Racing, shooting, flying, surfing, running and one warm island. All free, all in the browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0F1C'/%3E%3Cpath d='M14 40 Q32 30 50 40 L46 46 Q32 39 18 46 Z' fill='%237EE8FF'/%3E%3Cpath d='M20 14 l2.2 5.8L28 22l-5.8 2.2L20 30l-2.2-5.8L12 22l5.8-2.2z' fill='%23F4C64F'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/hub.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true">
+  <div class="stars"></div>
+  <div class="sun"></div>
+  <div class="ridge"></div>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="kicker">Six worlds · zero installs</p>
+      <h1>THE <span>GAME DECK</span></h1>
+      <p class="sub">Handcrafted browser games with a living mascot guide. Race a hovercar GP, hold the line against a saucer siege, fly the dawn mail run, carve a sunset point, outrun the last metro — or just light the lanterns on one small warm island.</p>
+      <p class="hint">Every game runs on phones and desktops, saves your progress locally, and respects your mute button.</p>
+    </div>
+    <div class="hero-mascot" id="mascot-hero" aria-label="The studio mascot"></div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">▾</div>
+</header>
+
+<main class="deck" id="deck"></main>
+
+<section class="factory-note">
+  <h2>How the deck grows</h2>
+  <p>Each game here ships from one shared game kit — a mascot engine, a synth audio engine, and a responsive game shell — so every new world keeps the same feel, the same accessibility, and the same one-tap start. The build recipe is public: <a href="https://github.com/siddhant-pardeshi/game-deck/blob/main/docs/GAME_FACTORY.md">read the game factory</a>.</p>
+</section>
+
+<footer>
+  <p>Made by <a href="https://github.com/siddhant-pardeshi">Siddhant Pardeshi</a>. All games, art, characters and music are original work.</p>
+  <p class="fine">Inspired by classic arcades and seaside evenings. Not affiliated with or endorsed by any studio or publisher.</p>
+</footer>
+
+<script src="js/mascot.js"></script>
+<script src="js/deck.js"></script>
+</body>
+</html>
